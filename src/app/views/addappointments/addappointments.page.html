@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="volver()" color="primary">atras</ion-button>
+    </ion-buttons>
+    <img slot="start" width="20%" height="20%" src="../../assets/img/H.png" alt="" >
+    <ion-title>Agenda</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid id="grid1">
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-select placeholder="Selecciona la especialidad" [multiple]="false" (ionChange)="changeevent($event)">
+            <ion-select-option *ngFor="let e of dataEspecialidad" [value]="e.id">{{e.nombre}} </ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid id="grid2">
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-select [(ngModel)]="postCita.doctor_id" placeholder="Selecciona Doctor(a)" [multiple]="false">
+            <ion-select-option *ngFor="let d of dataDoctor" [value]="d.id">{{d.firstName +" "+ d.lastName}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid id="grid1">
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-input [(ngModel)]="postCita.reason" placeholder="Descripcion de la cita"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid id="grid1">
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-input [(ngModel)]="postCita.date" placeholder="Seleccione una fecha" [disabled]="true"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid id="grid3">
+    <ion-row>
+      <ion-col>
+        <ion-datetime [showDefaultButtons]="true" [(ngModel)]="postCita.date">
+        </ion-datetime>
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end" >
+    <ion-fab-button color="success"  (click)="guardar()">
+      <ion-icon name="checkmark-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

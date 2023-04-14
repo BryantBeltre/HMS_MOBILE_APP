@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> HMS Juego </ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/home-ii']" color="primary">volver</ion-button>
+    </ion-buttons>
+    <img slot="start" width="20%" height="20%" src="../../assets/img/H.png" alt="" [routerLink]="['/home-ii']">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-text-center">
+    <ion-row>
+      <ion-col size="12">
+        <ion-card color="primary">
+          <img alt="Silhouette of mountains" src="../../../assets/img/brain.png" />
+          <ion-card-header>
+            <ion-card-title> Juego - Cultura General </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-button color="success" (click)="start()">Iniciar <ion-icon name="game-controller-outline"></ion-icon></ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-button color="warning" (click)="continue()">Continuar <ion-icon name="play-outline"></ion-icon> </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-button color="danger" (click)="reset()">Reset <ion-icon name="refresh-outline"></ion-icon></ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>

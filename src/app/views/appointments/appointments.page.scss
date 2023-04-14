@@ -1,0 +1,68 @@
+ion-content {
+    --background: rgb(29, 53, 87);
+}
+
+ion-toolbar {
+    color: black;
+    --background: rgb(255, 255, 255);
+}
+
+#menuitem {
+    --background: rgb(29, 53, 87);
+}
+
+#toolvarsidemenu {
+    color: white;
+    --background: rgb(29, 53, 87);
+}
+
+#containerconten {
+    color: white;
+    font-family: 'Roboto';
+    font-size: small;
+    padding: 2%;
+}
+
+ion-item {
+    color: white;
+    --background: rgb(40, 78, 131);
+    ;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+p {
+    color: white;
+}
+
+ion-grid {
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 8%;
+
+}
+
+#imgdiv {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+ion-item-sliding {
+    padding-top: 3%;
+}
+
+ion-item-options,
+ion-item-option {
+    padding-top: 3%;
+}
+
+ion-header,ion-title{
+    text-align: center;
+
+}

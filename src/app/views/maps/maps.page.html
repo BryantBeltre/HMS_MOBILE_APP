@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> HMS Mapa </ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/home-ii']" color="primary">volver</ion-button>
+    </ion-buttons>
+    <img slot="start" width="20%" height="20%" src="../../assets/img/H.png" alt="" [routerLink]="['/home-ii']">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="map" #map></div>
+</ion-content>

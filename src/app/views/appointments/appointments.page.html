@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/home-ii']" color="primary">volver</ion-button>
+    </ion-buttons>
+    <img slot="start" width="20%" height="20%" src="../../assets/img/H.png" alt="" [routerLink]="['/home-ii']">
+    <ion-title>Citas</ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content id="micontenido">
+  <div id="containerconten">
+    <div id="imgdiv">
+    </div>
+
+    <ion-item-sliding *ngFor="let c of citas">
+      <ion-item (click)="abrirP(c.id)">
+        <ion-label>
+          <h4> Dr(a) {{c.doctor.firstName +" " +c.doctor.lastName}}</h4>  
+          <p>{{c.date}}</p>    
+        </ion-label>
+
+        
+        <p slot="end" [ngStyle]="{'color': pendiente ? 'green' : 'red'}">{{ pendiente ? 'Completado' : 'Pendiente' }} </p>
+      </ion-item>
+      <ion-item-options>
+        <ion-item-option >
+          <ion-icon slot="top" name="pencil"></ion-icon>
+          Editar
+        </ion-item-option>
+        <ion-item-option (click)="presentAlert2(c.id)" color="danger">
+          <ion-icon slot="top" name="trash"></ion-icon>
+          Eliminar
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </div>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button [color]="btnNoAdd ? 'medium' : 'primary'" *ngIf="true"   (click)="redirectio()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

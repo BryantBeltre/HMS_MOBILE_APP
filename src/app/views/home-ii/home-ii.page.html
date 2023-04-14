@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar>
+    <img slot="start" width="20%" height="20%" src="../../assets/img/H.png" alt="" [routerLink]="['/home-ii']">
+    <ion-title>INICIO</ion-title>
+    <ion-avatar slot="end">
+      <img id="click-trigger" alt="Silhouette of a person's head" src="../../../assets/img/ja.jpg" button />
+    </ion-avatar>
+    <ion-popover trigger="click-trigger" triggerAction="click">
+      <ng-template>
+        <ion-content class="ion-padding">        
+          <ion-item type="button" (click)="profile()" button>
+            <ion-label>Perfil</ion-label>
+            <ion-icon name="person-outline"></ion-icon>
+          </ion-item>
+          <ion-item type="button" button (click)="singout()">
+            <ion-label>Cerrar Sesion</ion-label>
+            <ion-icon slot="end" name="log-out-outline"></ion-icon>
+          </ion-item>
+
+        </ion-content>
+
+      </ng-template>
+    </ion-popover>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid id="grid1">
+    <ion-row>
+      <ion-col>
+        <ion-card color="primary" [routerLink]="['/appointments']">
+          <ion-card-header>
+            <ion-icon name="file-tray-stacked-outline" style="width: 30px; height: 30px;"></ion-icon>
+            <ion-card-title>Citas</ion-card-title>
+            <ion-card-subtitle>Citas Medicas</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid id="grid1">
+    <ion-row>
+      <ion-col>
+        <ion-card color="primary" [routerLink]="['/imc']">
+          <ion-card-header>
+            <ion-icon name="barbell-outline" style="width: 30px; height: 30px;"></ion-icon>
+            <ion-card-title>Peso Ideal</ion-card-title>
+            <ion-card-subtitle>Analiza tu peso</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card color="primary" [routerLink]="['/entretaimer']">
+          <ion-card-header>
+            <ion-icon name="game-controller-outline" style="width: 30px; height: 30px;"></ion-icon>
+            <ion-card-title>Entretenimiento</ion-card-title>
+            <ion-card-subtitle>Espera sin aburrirte</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid id="grid1">
+    <ion-row>
+      <ion-col>
+        <ion-card color="primary" [routerLink]="['/maps']">
+          <ion-card-header>
+            <ion-icon name="map-outline" style="width: 30px; height: 30px;"></ion-icon>
+            <ion-card-title>Mapa</ion-card-title>
+            <ion-card-subtitle>Ubicar en el mapa</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

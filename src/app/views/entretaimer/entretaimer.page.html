@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/home-ii']" color="primary">volver</ion-button>
+    </ion-buttons>
+    <img slot="start" width="20%" height="20%" src="../../assets/img/H.png" alt="" [routerLink]="['/home-ii']">
+    <ion-title> Entretenimiento </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="containerconten">
+    <ion-card color="primary" [routerLink]="['/news']">
+      <ion-card-header>
+        <ion-card-title>𝐇𝐌𝐒 𝐍𝐎𝐓𝐈𝐂𝐈𝐀𝐒 <ion-icon name="newspaper-outline"></ion-icon></ion-card-title>
+        <ion-card-subtitle>Informate</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        Informate de lo ultimo en noticias
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="primary" [routerLink]="['/gameprincipal']">
+      <ion-card-header>
+        <ion-card-title>𝐇𝐌𝐒 𝐉𝐔𝐄𝐆𝐎𝐒 <ion-icon name="game-controller-outline"></ion-icon></ion-card-title>
+        <ion-card-subtitle>Diviertet</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        Diviertete y aprende un poco de cultura general.
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+
+</ion-content>

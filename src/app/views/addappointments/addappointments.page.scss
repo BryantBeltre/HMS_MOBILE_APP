@@ -1,0 +1,42 @@
+ion-content {
+    --background: rgb(29, 53, 87);
+
+}
+
+ion-toolbar {
+    color: black;
+    --background: rgb(255, 255, 255);
+}
+ion-header,ion-title{
+    text-align: center;
+
+}
+
+#menuitem {
+    --background: rgb(29, 53, 87);
+}
+
+#toolvarsidemenu {
+    color: white;
+    --background: rgb(29, 53, 87);
+}
+
+#containerconten {
+    color: white;
+    font-family: 'Roboto';
+    font-size: small;
+    padding: 2%;
+}
+
+ion-item {
+    color: white;
+    --background: rgb(40, 78, 131);
+    ;
+}
+
+ion-datetime {
+    color: white;
+    font-weight: bold;
+    --background: rgb(40, 78, 131);
+    ;
+}

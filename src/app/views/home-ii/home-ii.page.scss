@@ -1,0 +1,37 @@
+ion-content {
+    --background: rgb(29, 53, 87); 
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+ion-header{
+    --background: rgb(255,255,255);
+}
+ion-toolbar{
+    color: black;
+    --background: rgb(255,255,255);
+}
+ion-toolbar,ion-header,ion-title{
+    text-align: center;
+}
+
+ion-card{
+    text-align: center;
+}
+ion-title{
+    color: black;
+}
+
+ion-toolbar{
+    text-align: center;
+
+}
+ion-avatar{
+    width: 45px;
+    height: 45px;
+}
+
+ion-item{
+    --background: rgb(29, 53, 87); 
+}

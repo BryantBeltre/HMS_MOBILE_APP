@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/home-ii']" color="primary">volver</ion-button>
+    </ion-buttons>
+    <img slot="start" width="20%" height="20%" src="../../assets/img/H.png" alt="" [routerLink]="['/home-ii']">
+    <ion-title>IMC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="containerconten">
+    <ion-grid>
+      <img src="https://masvidasinobesidad.com/wp-content/uploads/2018/02/IMC.png" alt="">
+    </ion-grid>
+    <ion-grid>
+      <ion-item fill="outline">
+        <ion-label position="floating">Edad</ion-label>
+        <ion-input type="number" placeholder="Introduzca su edad" [(ngModel)]="edad"></ion-input>
+      </ion-item>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-item fill="outline">
+        <ion-label position="floating">Peso (lbs)</ion-label>
+        <ion-input type="number" placeholder="Introduzca su peso" [(ngModel)]="peso"></ion-input>
+      </ion-item>
+    </ion-grid>
+    <ion-grid>
+      <ion-item fill="outline">
+        <ion-label position="floating">Estatura (Pies)</ion-label>
+        <ion-input type="number" placeholder="Introduzca su estatura" [(ngModel)]="pies"></ion-input>
+      </ion-item>
+    </ion-grid>
+    <ion-grid>
+      <ion-button color="success" (click)="calcularimc()">Calcular</ion-button>
+    </ion-grid>
+    
+
+
+    <ion-grid>
+      <ion-card color="medium" [ngClass]="imc < 18.5 ? 'bajopeso': imc < 25 ? 'saludable':
+      imc < 30 ? 'sobrepeso' : imc < 35 ? 'obesidad': 'obsidadgradoII'">
+        <ion-card-header>
+          <ion-card-title>IMC</ion-card-title>
+          <ion-card-subtitle>{{imcText}}</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{imc}}
+        </ion-card-content>
+      </ion-card>
+    </ion-grid>
+
+  </div>
+</ion-content>

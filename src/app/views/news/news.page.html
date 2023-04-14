@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/entretaimer']" color="primary">volver</ion-button>
+    </ion-buttons>   
+    <img slot="start" width="20%" height="20%" src="../../assets/img/H.png" alt="" [routerLink]="['/home-ii']">
+    <ion-title>Noticias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="containerconten">
+    <ion-card *ngFor="let noticia of thenews">
+      <img alt="Silhouette of mountains" src="{{noticia.urlToImage}}" />
+      <ion-card-header>
+        <ion-card-title>{{noticia.title}}</ion-card-title>
+        <ion-card-subtitle>{{noticia.author}}</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        {{noticia.description}}
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+
+</ion-content>

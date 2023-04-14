@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/home-ii']" color="primary">volver</ion-button>
+    </ion-buttons>
+    <img slot="start" width="20%" height="20%" src="../../assets/img/H.png" alt="" [routerLink]="['/home-ii']">
+    <ion-title>{{userData.fristName}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="containerconten">
+
+    <div id="imgdiv">
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="../../../assets/img/ja.jpg" />
+      </ion-avatar>
+    </div>
+
+    <ion-grid id="grid1">
+      <ion-row>
+        <ion-col>Nombre: </ion-col>
+        <ion-col>{{userData.fristName}} </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>Apellido: </ion-col>
+        <ion-col>{{userData.lastName}}</ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>Identificacion: </ion-col>
+        <ion-col>{{userData.identification}} </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>Correo: </ion-col>
+        <ion-col>{{userData.email}}</ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>Contacto: </ion-col>
+        <ion-col>{{userData.numbercontact}} </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>Direccion: </ion-col>
+        <ion-col>{{userData.adress}} </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>Nacimiento: </ion-col>
+        <ion-col>{{userData.dateBorn}} </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid id="grid8">
+      <ion-row>
+        <ion-col>Contacto emergencia: </ion-col>
+        <ion-col>{{userData.emergecyContact}}</ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+</ion-content>

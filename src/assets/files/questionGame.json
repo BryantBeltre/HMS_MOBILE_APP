@@ -1,0 +1,154 @@
+{
+    "data": [
+        {
+            "question": "¿Quién es el autor de la Odisea?",
+            "answer": "Homero",
+            "help": "Personaje de los simpsons"
+        },
+        {
+            "question": "¿Cuál es el río más largo del mundo?",
+            "answer": "Rio Amazonas",
+            "help": "Río de América del Sur"
+        },
+        {
+            "question": "¿Quién es el autor de el Quijote?",
+            "answer": "Miguel de Cervantes.",
+            "help": "Empieza con Mi y termina con tes"
+        },
+        {
+            "question": "¿Quién pintó “la última cena”?",
+            "answer": "Leonardo da Vinci",
+            "help": "Tiene nombrea de actor famoso - Dicaprio"
+        },
+        {
+            "question": "¿Qué año llegó Cristóbal Colón a América?",
+            "answer": "1492",
+            "help": "*4*2"
+        },
+        {
+            "question": "¿Cuál es el disco más vendido de la historia?",
+            "answer": "Thriller",
+            "help": "Es de Michael Jackson"
+        },
+        {
+            "question": "¿En qué se especializa la cartografía?",
+            "answer": "Estudio de los mapas",
+            "help": "Componente de ubicacion geografica"
+        },
+        {
+            "question": "¿En qué año comenzó la II Guerra Mundial?",
+            "answer": "1939",
+            "help": "193*"
+        },
+        {
+            "question": "¿Qué país tiene forma de bota?",
+            "answer": "Italia",
+            "help": "En dicho pais esta la torre de pisa"
+        },
+        {
+            "question": "¿En qué lugar del cuerpo se produce la insulina?",
+            "answer": "Páncreas ",
+            "help": "_ _ _ creas"
+        },
+        {
+            "question": "¿Cómo se llama el himno nacional de Francia?",
+            "answer": "La Marsellesa",
+            "help": "La M_ _sel_esa"
+        },
+        {
+            "question": "¿Cómo se llama el animal más rápido del mundo?",
+            "answer": "El guepardo",
+            "help": "Felino dorado de manchas negra Gue*****"
+        },
+        {
+            "question": "¿Cuál es la ciudad de los rascacielos?",
+            "answer": "Nueva York",
+            "help": "Considerada como la segunda ciudad de EEUU"
+        },
+        {
+            "question": "¿En qué país se encuentra el famoso monumento Taj Mahal?",
+            "answer": "En la india",
+            "help": "Ubicada en Asia del sur"
+        },
+        {
+            "question": "¿Quién era el general de los nazis en la Segunda Guerra Mundial?",
+            "answer": "Adolf Hitler",
+            "help": "Máximo líder de la Alemania nazi."
+        },
+        {
+            "question": "¿A quién le crecía la nariz cuando mentía?",
+            "answer": "Pinocho",
+            "help": "Muñenco de madera"
+        },
+        {
+            "question": "¿Quién traicionó a Jesús?",
+            "answer": "Juda",
+            "help": "J*d*"
+        },
+        {
+            "question": "¿Dónde está la Casa Blanca?",
+            "answer": "Washington D.C.",
+            "help": "Ciudad de Estados Unidos"
+        },
+        {
+            "question": "¿Qué día celebran los cristianos la festividad de la Epifanía de Jesús?",
+            "answer": "6 de enero",
+            "help": "Dia de reyes mago"
+        },
+        {
+            "question": "¿Cuál es la capital de Francia?",
+            "answer": "París",
+            "help": "Ahi tambien se encuentra, la torre de pais "
+        },
+        {
+            "question": "¿Cuándo empezó la Primera Guerra Mundial?",
+            "answer": "1914",
+            "help": "191*"
+        },
+        {
+            "question": "¿En qué año se aprobó la actual Constitución española?",
+            "answer": "Mark Zuckerberg ",
+            "help": "Mr Zuck"
+        },
+        {
+            "question": "¿De qué país es originario el café?",
+            "answer": "Etiopía,",
+            "help": "País perteneciente al continente africano."
+        },
+        {
+            "question": "¿Cuál es el órgano más grande del cuerpo humano?",
+            "answer": "La piel",
+            "help": "Nos cubre todo el cuerpo"
+        },
+        {
+            "question": "¿En qué año se produjeron los atentados sobre las Torres Gemelas de Nueva York?",
+            "answer": "2001",
+            "help": "Primer años de los 2000's "
+        },
+        {
+            "question": "¿Quién fue Mohamed Alí?",
+            "answer": "Boxeador estadounidense",
+            "help": "Deporte fisico y con guantes"
+        },
+        {
+            "question": "¿Cuál es el estado que tiene menos habitantes del mundo?",
+            "answer": "Ciudad del vaticano",
+            "help": "Ciudad donde hay un papa"
+        },
+        {
+            "question": "¿En qué país se encuentra el rascacielos más alto del mundo?",
+            "answer": "Dubai",
+            "help": "Conocida como una ciudad de lujo y dinero"
+        },
+        {
+            "question": "Donde se originaron los Juegos Olímpicos ",
+            "answer": "Grecia ",
+            "help": "Se llaman así porque se celebran en la ciudad de Olimpia"
+        },
+        {
+            "question": "¿Quién escribió “100 años de soledad”?",
+            "answer": "Gabriel Garcia Márquez",
+            "help": "Mismo autor de cronica de una muerte anunciada"
+        }
+    ]
+}
