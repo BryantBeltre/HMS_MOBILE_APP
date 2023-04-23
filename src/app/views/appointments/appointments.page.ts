@@ -60,6 +60,14 @@ export class AppointmentsPage implements OnInit {
 
     loading.present();
   }
+  async showLoading2() {
+    const loading = await this.loadingCtrl.create({
+      message: 'Eliminando Cita...',
+      duration: 2000,
+    });
+
+    loading.present();
+  }
 
 
   async presentAlert() {
@@ -83,7 +91,7 @@ export class AppointmentsPage implements OnInit {
 
           this.deletecita8(id);
           this.router.navigateByUrl('/home-ii');
-          this.showLoading();
+          this.showLoading2();
 
         }
       },
@@ -105,7 +113,7 @@ export class AppointmentsPage implements OnInit {
     }
 
     if (!this.btnNoAdd) {
-      this.router.navigateByUrl('/home-ii');
+      this.router.navigateByUrl('/addappointments');
 
     }
   }
